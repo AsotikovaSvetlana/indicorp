@@ -83,10 +83,22 @@ body {
   color: #00A0C1;
 }
 
+.heder-search-icon {
+  display: none;
+}
+
+.header-basket-icon {
+  display: none;
+}
+
 .header-navbar-toggler {
   width: 30px;
   height: 15px;
   cursor: pointer;
+}
+
+.header-mobile-menu {
+  display: none;
 }
 
 .header-conteiner {
@@ -449,8 +461,13 @@ body {
   line-height: 1.3em;
 }
 
+.form-input-and-button {
+  width: 60%;
+  display: flex;
+}
+
 .subscribe-form-input {
-  width: 40%;
+  width: 75%;
   padding: 15px 20px;
   box-sizing: border-box;
   background: #F9F9F9;
@@ -953,8 +970,12 @@ body {
     font-size: 19px;
   }
   
+  .form-input-and-button {
+    width: 55%;
+  }
+
   .subscribe-form-input {
-    width: 45%;
+    width: calc(100% - 117px);
   }
   
   .get-in-touch {
@@ -1065,3 +1086,326 @@ body {
 
 }
 
+/* Мобильная версия */
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+
+  .header-navigation {
+    width: 84%;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 35px;
+    padding-bottom: 25px;
+    background-color: #F6F6F6;
+  }
+
+  .logo-and-navigation {
+    padding-left: 0;
+  }
+  
+  .header-logo {
+    margin-right: 26%;
+  }
+  
+  .navigation-menu {
+    display: none;
+  }
+
+  .header-navbar-icon {
+    display: flex;
+  }
+  
+  .heder-search-icon, .header-basket-icon, .header-navbar-toggler {
+    display: block;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+  }
+
+  .header-basket-icon {
+    margin-right: 32px;
+    margin-left: 24px;
+  }
+  
+  .header-mobile-menu {
+    display: none;
+    text-align: center;
+    background-color: #F6F6F6;
+  }
+
+  .header-mobile-menu.open {
+    display: block;
+  }
+
+  .mobile-menu {
+    padding-top: 100px;
+    padding-bottom: 98px;
+  }
+
+  .mobile-menu-list {
+    list-style: none;
+  }
+
+  .mobile-menu-item {
+    font-size: 30px;
+  }
+
+  .mobile-menu-item:nth-child(n + 2) {
+    margin-top: 30px;
+  }
+
+  .mobile-menu-link {
+    display: block;
+    text-decoration: none;
+    color: #737373;
+  }
+
+  .header-conteiner {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 80px 40px 205px;
+    margin-top: 0;
+  }
+
+  .header-content {
+    width: 100%;
+    align-items: center;
+    margin-bottom: 80px;
+    text-align: center;
+  }
+
+  .header-title {
+    font-size: 40px;
+    font-weight: 700;
+  }
+  
+  .header-text {
+    width: 63%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    line-height: 1.5;
+  }
+
+  .header-button-menu {
+    flex-direction: column;
+  }
+  
+  .header-button-link {
+    width: 185px;
+  }
+
+  .header-button-link:first-child {
+    background-color: #FFA62B;
+    border: 1px solid #FFA62B;
+    color: #ffffff;
+  }
+  
+  .header-button-link:nth-child(n + 2) {
+    margin-left: 0;
+    margin-top: 25px;
+  }
+
+  .header-description {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    position: static;
+    bottom: initial;
+  }
+  
+  .header-description-card {
+    width: 100%;
+    max-width: 400px;
+    padding: 35px 40px;
+    box-shadow: none;
+  }
+  
+  .header-description-card:nth-child(n + 2) {
+    margin-left: 0;
+    margin-top: 30px;
+  }
+
+  .advantages-block {
+    padding-top: 98px;
+    padding-bottom: 70px;
+  }
+
+  .heading-and-text {
+    width: 61%;
+    margin-bottom: 75px;
+  }
+
+  .container {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container-item {
+    width: 58%;
+  }
+
+  .container-item:nth-child(n + 2) {
+    margin-left: 0;
+    margin-top: 30px;
+  }
+
+  .advantages-card {
+    max-width: 250px;
+    padding: 30px 20px;
+  }
+
+  .practice-advice {
+    padding-top: 98px;
+    padding-bottom: 106px;
+  }
+
+  .heading-text {
+    width: 65%;
+    margin-bottom: 75px;
+  }
+  
+  .practice-advice-content {
+    padding: 30px;
+  }
+  
+  .practice-advice-title {
+    width: 75%;
+  }
+  
+  .preview {
+    width: 80%;
+  }
+
+  .video-and-description {
+    width: 80%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .video {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 52px;
+  }
+
+  .description-about {
+    width: 100%;
+  }
+
+  .clients {
+    width: 40%;
+    padding-top: 80px;
+    padding-bottom: 35px;
+    flex-direction: column;
+  }
+  
+  .clients-logo {
+    width: 153px;
+  }
+  
+  .clients-logo:nth-child(n + 2) {
+    margin-left: 0;
+    margin-top: 60px;
+  }
+
+  .subscribe {
+    height: initial;
+  }
+  
+  .subscribe-form-container {
+    width: 100%;
+    padding: 30px 38px;
+    position: static;
+    left: initial;
+    bottom: initial;
+  }
+  
+  .subscribe-form {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .subscribe-form-hint {
+    width: 80%;
+    margin-right: initial;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .form-input-and-button {
+    display: flex;
+    justify-content: center;
+    width: 95%;
+  }
+
+  .subscribe-form-input {
+    width: 62%;
+  }
+  
+  .get-in-touch {
+    padding-top: 75px;
+    padding-bottom: 130px;
+  }
+
+  .contact-container {
+    width: 80%;
+    margin-top: 0;
+    flex-direction: column;
+  }
+  
+  .contact-card {
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .contact-card:nth-child(n + 2) {
+    margin-top: 30px;
+  }
+  
+  .contact-description {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  
+  .footer-callback-container {
+    width: 60%;
+    flex-direction: column;
+  }
+
+  .callback-hint {
+    width: 80%;
+  }
+  
+  .callback-button {
+    width: 160px;
+    margin-top: 50px;
+  }
+
+  .footer-menu-container {
+    width: 60%;
+    flex-direction: column;
+  }
+  
+  .footer-menu-card {
+    width: 100%;
+  }
+
+  .footer-menu-card:nth-child(n + 2) {
+    margin-top: 30px;
+  }
+  
+  .footer-social-link {
+    padding-bottom: 55px;
+  }
+
+  .social-link-container {
+    width: 60%;
+    flex-direction: column;
+  }
+
+  .social-link-menu {
+    margin-top: 50px;
+  }
+  
+}
