@@ -7,7 +7,7 @@
 
 **Контакты:**
 
-Telegram: https://t.me/asotikova
+Telegram: https://t.me/asotikova  
 E-mail: workasotikova@gmail.com
 
 
