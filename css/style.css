@@ -450,24 +450,24 @@ body {
 
 .subscribe-form {
   display: flex;
+  align-items: center;
 }
 
 .subscribe-form-hint {
-  width: 28%;
-  margin-right: 19%;
-  display: block;
+  width: 40%;
+  margin-right: 5%;
   font-size: 24px;
   font-weight: 700;
   line-height: 1.3em;
 }
 
 .form-input-and-button {
-  width: 60%;
+  width: 55%;
   display: flex;
 }
 
 .subscribe-form-input {
-  width: 75%;
+  width: calc(100% - 117px);
   padding: 15px 20px;
   box-sizing: border-box;
   background: #F9F9F9;
@@ -965,17 +965,7 @@ body {
   }
   
   .subscribe-form-hint {
-    width: 40%;
-    margin-right: 5%;
     font-size: 19px;
-  }
-  
-  .form-input-and-button {
-    width: 55%;
-  }
-
-  .subscribe-form-input {
-    width: calc(100% - 117px);
   }
   
   .get-in-touch {
